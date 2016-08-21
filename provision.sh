@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install vim, screen, etc.
-sudo yum install -y vim screen tree git colordiff man man-pages rpm-build ntp
+sudo yum install -y vim screen tree git colordiff man man-pages rpm-build ntp yum-utils
 
 # Start ntpd.
 sudo service ntpd start
@@ -15,9 +15,10 @@ source /usr/local/rvm/scripts/rvm
 exit
 source /usr/local/rvm/scripts/rvm
 
-# Install fpm.
+# Install fpm and r10k gems.
 sudo su
 gem install fpm
+gem install r10k
 exit
 
 # Custom bashrc files.

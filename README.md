@@ -2,10 +2,13 @@
 
 ### Source code for my Ruby Vagrant box on Atlas: [server4001/ruby-centos](https://atlas.hashicorp.com/server4001/boxes/ruby-centos)
 
-#### Versions
+### Versions
 
 * CentOS 6.7
-* Ruby: 2.3.1
+* Ruby: 2.3.1p112
+* RubyGems: 2.1.11
+* fpm: 1.6.2
+* r10k: 2.4.1
 
 ### Instructions
 
@@ -28,10 +31,3 @@
 * `sudo su`
 * `history -c && exit`
 * `cat /dev/null > ~/.bash_history && history -c && exit`
-
-### TODO:
-
-* Add 127.0.0.1 for root using:
-`CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY 'password';`
-`GRANT ALL ON *.* TO 'root'@'127.0.0.1';`
-
