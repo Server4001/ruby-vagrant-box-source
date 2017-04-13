@@ -17,8 +17,7 @@ source /usr/local/rvm/scripts/rvm
 
 # Install fpm and r10k gems.
 sudo su
-gem install fpm
-gem install r10k
+gem install fpm r10k
 exit
 
 # Custom bashrc files.
